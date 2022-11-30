@@ -17,7 +17,7 @@ val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = Con
 class DataStoreOperationsImpl(context: Context) : DataStoreOperations {
 
     private companion object {
-//        val SFXSettingsKey = booleanPreferencesKey(name = Constants.PREFERENCES_SFX_ENABLED_KEY)
+        //        val SFXSettingsKey = booleanPreferencesKey(name = Constants.PREFERENCES_SFX_ENABLED_KEY)
         val musicSettingsKey = booleanPreferencesKey(name = Constants.PREFERENCES_MUSIC_ENABLED_KEY)
         val lastLevelKey = stringPreferencesKey(name = Constants.PREFERENCES_LAST_LEVEL_KEY)
         val remainHealKey = intPreferencesKey(name = Constants.PREFERENCES_REMAIN_HEAL_KEY)

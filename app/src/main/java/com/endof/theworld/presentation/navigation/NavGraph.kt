@@ -3,10 +3,10 @@ package com.endof.theworld.presentation.navigation
 import androidx.compose.animation.*
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
-import com.google.accompanist.navigation.animation.AnimatedNavHost
-import com.google.accompanist.navigation.animation.composable
 import com.endof.theworld.presentation.screens.game.GameScreen
 import com.endof.theworld.presentation.screens.menu.MenuScreen
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.composable
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable

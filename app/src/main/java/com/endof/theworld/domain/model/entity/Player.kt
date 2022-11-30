@@ -3,7 +3,7 @@ package com.endof.theworld.domain.model.entity
 import com.endof.theworld.util.Constants
 import kotlin.math.min
 
-class Player(onDeath: () -> Unit): Entity(
+class Player(onDeath: () -> Unit) : Entity(
     stats = EntityStats(
         attack = Constants.PLAYER_ATTACK,
         defence = Constants.PLAYER_DEFENCE,

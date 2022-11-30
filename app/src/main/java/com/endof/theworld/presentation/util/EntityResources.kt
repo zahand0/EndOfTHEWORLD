@@ -4,7 +4,6 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.RawRes
 import com.endof.theworld.R
 import com.endof.theworld.domain.model.entity.Enemy
-import com.endof.theworld.domain.model.entity.Entity
 import com.endof.theworld.domain.model.entity.Player
 
 @DrawableRes
@@ -17,7 +16,7 @@ fun Enemy.imgId(): Int {
 }
 
 @DrawableRes
-fun Enemy.imgLoseId():  Int {
+fun Enemy.imgLoseId(): Int {
     return when (this) {
         is Enemy.Dio -> R.drawable.dio_lose
         is Enemy.HolHorse -> R.drawable.hol_horse_lose
@@ -51,6 +50,7 @@ fun Enemy.soundWinId(): Int {
         is Enemy.VanillaIce -> R.raw.vanilla_ice_win
     }
 }
+
 @RawRes
 fun Enemy.soundEvadeId(): Int {
     return when (this) {

@@ -13,6 +13,7 @@ sealed class Enemy(stats: EntityStats, onDeath: () -> Unit) :
         ),
         onDeath = onDeath
     )
+
     class VanillaIce(onDeath: () -> Unit) : Enemy(
         stats = EntityStats(
             attack = Constants.VANILLA_ICE_ATTACK,
@@ -22,6 +23,7 @@ sealed class Enemy(stats: EntityStats, onDeath: () -> Unit) :
         ),
         onDeath = onDeath
     )
+
     class Dio(onDeath: () -> Unit) : Enemy(
         stats = EntityStats(
             attack = Constants.DIO_ATTACK,
