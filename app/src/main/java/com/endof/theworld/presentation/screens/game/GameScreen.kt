@@ -140,11 +140,8 @@ fun GameScreen(
                             onClick = {
                                 viewModel.updateRemainHeal(Constants.HEAL_MAX_NUMBER)
                                 level?.let { gameLevel ->
-                                    viewModel.start(
-                                        level = gameLevel.nextLevel(),
-                                        healCount =  Constants.HEAL_MAX_NUMBER
-                                    )
                                     viewModel.updateLevel(gameLevel.nextLevel())
+                                    navController.popBackStack()
                                 }
                             },
                             alpha = alphaState
