@@ -3,13 +3,15 @@ package com.endof.theworld.presentation.common
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontWeight
 
 @Composable
 fun TopBar(
     title: String,
-    onBackClick: () -> Unit
+    onBackClick: () -> Unit,
+    onRefreshClick: () -> Unit
 ) {
     TopAppBar(
         title = {
@@ -24,6 +26,15 @@ fun TopBar(
             IconButton(onClick = onBackClick) {
                 Icon(
                     imageVector = Icons.Default.ArrowBack,
+                    contentDescription = null,
+                    tint = MaterialTheme.colors.onSurface
+                )
+            }
+        },
+        actions = {
+            IconButton(onClick = onRefreshClick) {
+                Icon(
+                    imageVector = Icons.Default.Refresh,
                     contentDescription = null,
                     tint = MaterialTheme.colors.onSurface
                 )
