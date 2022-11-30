@@ -82,10 +82,18 @@ fun GameScreen(
     Scaffold(
         topBar = {
             TopBar(
-                title = ""
-            ) {
-                navController.popBackStack()
-            }
+                title = "",
+                onBackClick = {
+                    navController.popBackStack()
+                },
+                onRefreshClick = {
+                    viewModel.start(
+                        level = GameLevel.ONE,
+                        healCount = Constants.HEAL_MAX_NUMBER
+                    )
+                }
+            )
+
         },
         backgroundColor = MaterialTheme.colors.background
     ) { paddingValues ->
