@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">End of THE WORLD</string>
+    <string name="enemy_image">Enemy Image</string>
+    <string name="hp">HP</string>
+    <string name="attack">Attack</string>
+    <string name="heal">Heal %1$d/%2$d</string>
+    <string name="background">Background</string>
+    <string name="message_image">Message Image</string>
+    <string name="enemy_was_defeated">%s was defeated.</string>
+    <string name="continue_text">Continue</string>
+    <string name="you_defeated">You are defeated.</string>
+    <string name="restart">Restart</string>
+    <string name="game_end_message">%s was destroyed, but at what cost...</string>
+    <string name="menu">Menu</string>
+    <string name="background_image">Background image</string>
+</resources>
